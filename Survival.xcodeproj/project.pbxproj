@@ -24,6 +24,14 @@
 		1C09D26118204FA700F2B474 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C09D23C18204FA600F2B474 /* UIKit.framework */; };
 		1C09D26918204FA700F2B474 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1C09D26718204FA700F2B474 /* InfoPlist.strings */; };
 		1C09D26B18204FA700F2B474 /* SurvivalTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C09D26A18204FA700F2B474 /* SurvivalTests.m */; };
+		1C09D2791820505D00F2B474 /* background-music-aac.caf in Resources */ = {isa = PBXBuildFile; fileRef = 1C09D2761820505D00F2B474 /* background-music-aac.caf */; };
+		1C09D27A1820505D00F2B474 /* background-music-aac.caf in Resources */ = {isa = PBXBuildFile; fileRef = 1C09D2761820505D00F2B474 /* background-music-aac.caf */; };
+		1C09D27B1820505D00F2B474 /* pew-pew-lei.caf in Resources */ = {isa = PBXBuildFile; fileRef = 1C09D2771820505D00F2B474 /* pew-pew-lei.caf */; };
+		1C09D27C1820505D00F2B474 /* pew-pew-lei.caf in Resources */ = {isa = PBXBuildFile; fileRef = 1C09D2771820505D00F2B474 /* pew-pew-lei.caf */; };
+		1C09D27D1820505D00F2B474 /* sprites.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 1C09D2781820505D00F2B474 /* sprites.atlas */; };
+		1C09D27E1820505D00F2B474 /* sprites.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 1C09D2781820505D00F2B474 /* sprites.atlas */; };
+		1C09D28118205BA500F2B474 /* IDKSGameOverScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C09D28018205BA500F2B474 /* IDKSGameOverScene.m */; };
+		1C09D28218205BA500F2B474 /* IDKSGameOverScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C09D28018205BA500F2B474 /* IDKSGameOverScene.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +68,11 @@
 		1C09D26618204FA700F2B474 /* SurvivalTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SurvivalTests-Info.plist"; sourceTree = "<group>"; };
 		1C09D26818204FA700F2B474 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1C09D26A18204FA700F2B474 /* SurvivalTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SurvivalTests.m; sourceTree = "<group>"; };
+		1C09D2761820505D00F2B474 /* background-music-aac.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "background-music-aac.caf"; sourceTree = "<group>"; };
+		1C09D2771820505D00F2B474 /* pew-pew-lei.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "pew-pew-lei.caf"; sourceTree = "<group>"; };
+		1C09D2781820505D00F2B474 /* sprites.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = sprites.atlas; sourceTree = "<group>"; };
+		1C09D27F18205BA500F2B474 /* IDKSGameOverScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDKSGameOverScene.h; sourceTree = "<group>"; };
+		1C09D28018205BA500F2B474 /* IDKSGameOverScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDKSGameOverScene.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,8 +141,11 @@
 				1C09D25018204FA600F2B474 /* IDKSViewController.m */,
 				1C09D25218204FA600F2B474 /* IDKSMyScene.h */,
 				1C09D25318204FA600F2B474 /* IDKSMyScene.m */,
+				1C09D27F18205BA500F2B474 /* IDKSGameOverScene.h */,
+				1C09D28018205BA500F2B474 /* IDKSGameOverScene.m */,
 				1C09D25518204FA600F2B474 /* Spaceship.png */,
 				1C09D25718204FA600F2B474 /* Images.xcassets */,
+				1C09D2741820505D00F2B474 /* SurvivalResources */,
 				1C09D24118204FA600F2B474 /* Supporting Files */,
 			);
 			path = Survival;
@@ -162,6 +178,24 @@
 				1C09D26718204FA700F2B474 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1C09D2741820505D00F2B474 /* SurvivalResources */ = {
+			isa = PBXGroup;
+			children = (
+				1C09D2751820505D00F2B474 /* Sounds */,
+				1C09D2781820505D00F2B474 /* sprites.atlas */,
+			);
+			path = SurvivalResources;
+			sourceTree = "<group>";
+		};
+		1C09D2751820505D00F2B474 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				1C09D2761820505D00F2B474 /* background-music-aac.caf */,
+				1C09D2771820505D00F2B474 /* pew-pew-lei.caf */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,10 +275,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C09D27D1820505D00F2B474 /* sprites.atlas in Resources */,
+				1C09D2791820505D00F2B474 /* background-music-aac.caf in Resources */,
 				1C09D24518204FA600F2B474 /* InfoPlist.strings in Resources */,
 				1C09D25818204FA600F2B474 /* Images.xcassets in Resources */,
 				1C09D25618204FA600F2B474 /* Spaceship.png in Resources */,
 				1C09D24E18204FA600F2B474 /* Main.storyboard in Resources */,
+				1C09D27B1820505D00F2B474 /* pew-pew-lei.caf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,7 +289,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C09D27A1820505D00F2B474 /* background-music-aac.caf in Resources */,
 				1C09D26918204FA700F2B474 /* InfoPlist.strings in Resources */,
+				1C09D27E1820505D00F2B474 /* sprites.atlas in Resources */,
+				1C09D27C1820505D00F2B474 /* pew-pew-lei.caf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +303,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C09D28118205BA500F2B474 /* IDKSGameOverScene.m in Sources */,
 				1C09D24718204FA600F2B474 /* main.m in Sources */,
 				1C09D25118204FA600F2B474 /* IDKSViewController.m in Sources */,
 				1C09D24B18204FA600F2B474 /* IDKSAppDelegate.m in Sources */,
@@ -275,6 +316,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C09D26B18204FA700F2B474 /* SurvivalTests.m in Sources */,
+				1C09D28218205BA500F2B474 /* IDKSGameOverScene.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
